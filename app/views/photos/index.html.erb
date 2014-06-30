@@ -1,0 +1,30 @@
+<div class="page header">
+  <h3>Total <%= @total_number_of_photos %> photos in "<%= @photoset_title %>"</h3>
+  <%= link_to 'Generate sharing string!', photos_show_path, method: :get, class: 'btn btn-primary pull-right' %>
+</div>
+<br/>
+<br/>
+<div class="well table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Check it!</th>
+        <th>Title</th>
+        <th>ID</th>
+        <th>Photo</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @photos_array.each do |photo| %>
+        <tr>
+          <td><%= check_box_tag(photo.id, photo["isselected"]) %></td>
+          <td><%= photo.title %></td>
+          <td><%= photo.id %></td>
+          <td><%= image_tag(generate_image_source(false, photo), class: "img-thumbnail img-responsive") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<div>

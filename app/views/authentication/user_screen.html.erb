@@ -1,0 +1,10 @@
+<div class="page header">
+  <h3>Please input your user name:</h3>
+</div>
+<div class="well">
+  <%= form_tag("/user_login", method: "get") do %>
+    <%= label_tag(:username, "User Name:") %>
+    <%= text_field_tag(:username) %>
+    <%= submit_tag("Login", class: 'btn btn-primary') %>
+  <% end %>
+</div>

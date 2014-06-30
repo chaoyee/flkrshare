@@ -1,0 +1,10 @@
+<div class="page header">
+  The sharing strings are:
+</div>  
+<div class="well">
+  <% @photos_array.each do |photo| %>
+    <%= generate_share_string(photo) %>
+    <%= "<br/>" %>
+    <br/>
+  <% end %>
+</div>
