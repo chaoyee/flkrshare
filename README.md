@@ -1,5 +1,3 @@
-== README
-
 ### Making a Flickr sharing utility using Flickr API
 -----------------
 Flickr is a well-known photo sharing service. I have used it since 2006. It's a stable, easy to use and powerful site for sharing my photography. Further more, I used Flickr as a photo bed to serve the photos to my blog site. It's a perfect match for saving space of my blog web site as well as better performance.
@@ -12,9 +10,9 @@ Firstly, I visit [Flickr API web site](https://www.flickr.com/services/api/) to 
 
 ["flickraw"](http://hanklords.github.io/flickraw/) is quite promising since it supports SSL. I found it is extremly easy to use. Also, developers can save times because there are many handy helpers to use. 
 
-After a hard working time, **flkrshare** is releasing!
+After a hard working time, **[flkrshare](https://github.com/chaoyee/flkrshare)** is releasing!
 
-The **flkrshare** application is a flickr sharing urls generator. 
+The **[flkrshare](https://github.com/chaoyee/flkrshare)** application is a flickr sharing urls generator. 
 
 It starts from getting a valid flickr user. Flickr will ask for the permission to read the original size of the photos and then show all photosets owned by the user.  It will generate the sharing urls of all photos after user choose one photoset.  The users just copy the sharing urls, paste to their blog html editors and starts to write article.
 
