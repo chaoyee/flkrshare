@@ -1,6 +1,6 @@
 class AuthenticationController < ApplicationController
   CALLBACK_URL = "http://127.0.0.1:3000/callback" if Rails.env.development?
-  CALLBACK_URL = "http://____.herokuapp.com:3000/callback" if Rails.env.production?
+  CALLBACK_URL = "http://flkrshare.herokuapp.com/callback" if Rails.env.production?
 
   def user_login
     username = params[:username]
