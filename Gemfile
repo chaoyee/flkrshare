@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use sqlite3 as the database for Active Record
@@ -28,6 +30,10 @@ gem 'spring',        group: :development
 group :development do
   gem 'pry'
   gem 'pry-nav'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 gem 'flickraw'
