@@ -28,3 +28,6 @@ It starts from getting a valid flickr user. Flickr will ask for the permission t
 3. select the photoset.
 4. review the photos.
 5. generate the sharing urls.
+
+#### App on Heroku
+http://flkrshare.herokuapp.com/
